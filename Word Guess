@@ -1,0 +1,25 @@
+import random
+
+def word_guess():
+words = ["computer", "elephant", "jacket", "vacation", "umbrella", "pineapple"]
+target_word = random.choice(words)
+attempts = 3
+
+print("Welcome to Word Guess!")
+print("Try to guess the word within 3 attempts.")
+
+while attempts > 0:
+print("You have", attempts, "attempts left.")
+guess = input("Enter your guess: ").lower()
+
+if guess == target_word:
+print("Congratulations! You guessed the word correctly.")
+break
+else:
+print("Incorrect guess.")
+attempts -= 1
+
+if attempts == 0:
+print("Game over! The word was:", target_word)
+
+word_guess()
