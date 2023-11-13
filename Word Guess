@@ -3,7 +3,7 @@ import random
 def word_guess():
 words = ["computer", "elephant", "jacket", "vacation", "umbrella", "pineapple"]
 target_word = random.choice(words)
-attempts = 2
+attempts = 21
 
 print("Welcome to Word Guess!")
 print("Try to guess the word within 3 attempts.")
